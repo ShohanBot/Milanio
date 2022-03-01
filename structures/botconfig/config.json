@@ -1,10 +1,10 @@
 {
     "env": {
         "TOKEN": "",
-        "PREFIX": "",
+        "PREFIX": "!",
         "MongoDB_TOKEN": "",
         "INVITE": "",
-        "WEBSITE": "",
+        "WEBSITE": "https://google.com",
         "google_API": "",
         "google_Engine_id": "",
         "spotify_clientID": "",
