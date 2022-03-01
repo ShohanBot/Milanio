@@ -35,7 +35,7 @@ module.exports = {
       `${config.env.PREFIX || process.env.PREFIX}help | on ${client.guilds.cache.size} Servers, with ${Math.ceil(client.users.cache.size / 1000)}k Members`,
       `${config.env.PREFIX || process.env.PREFIX}play | ${config.env.PREFIX || process.env.PREFIX}autoplay`,
       `${config.env.PREFIX || process.env.PREFIX}invite | ${config.env.PREFIX || process.env.PREFIX}support`,
-      `By: discord.gg/milanio`,
+      `By: discord.gg/amayoritown`,
     ],
     i = 0;
 
