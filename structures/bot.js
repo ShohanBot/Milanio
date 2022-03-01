@@ -39,7 +39,7 @@ const client = new Client({
     ],
     presence: {
         activities: [{
-            name: `${process.env.PREFIX}help | @Milanio`,
+            name: `${process.env.PREFIX}help | @Yuito`,
             type: "PLAYING",
         }],
         status: "online"
