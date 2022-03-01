@@ -201,14 +201,14 @@ module.exports = {
 🔰 [Information](${process.env.WEBSITE})
 <:M_music:919059393268572202> [Music](${process.env.WEBSITE})
 💪 [Setup](${process.env.WEBSITE})
-<:M_mod:903984765638697012> [Moderation](${process.env.WEBSITE})
+🛠️ [Moderation](${process.env.WEBSITE})
 🕹️ [Fun](${process.env.WEBSITE})
 🎮 [Mini Games](${process.env.WEBSITE})
 🎉 [Giveaway](${process.env.WEBSITE})
 🎟️ [Ticket](${process.env.WEBSITE})
 🔨 [Utility](${process.env.WEBSITE})
 📣 [Report](${process.env.WEBSITE})
-<:M_level:903985530218356787> [Ranking](${process.env.WEBSITE})**`
+🎚️ [Ranking](${process.env.WEBSITE})**`
           }])
           .addField(`🔗 **Links:**`, `>>> **[Support Server](${process.env.SUPPORT}) | [Invite Me](${process.env.INVITE}) | [Dashboard](${process.env.WEBSITE})**`)
 
@@ -275,7 +275,7 @@ module.exports = {
                       name: `🎉┃Giveaway`,
                       value: `${client.commands.filter((cmd) => cmd.category === "giveaway").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
-                      name: `<:M_ticket:918835311621050428>┃Ticket`,
+                      name: `🎟️┃Ticket`,
                       value: `${client.commands.filter((cmd) => cmd.category === "ticket").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
                       name: `🔨┃Utility`,
@@ -466,7 +466,7 @@ module.exports = {
         embeds.push(embed0)
 
         var embed1 = new MessageEmbed()
-          .addField(`<:ItemMusicNote:901775606604251156>┃__**MUSIC**__`,
+          .addField(`🎵┃__**MUSIC**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "music").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed1)
 
