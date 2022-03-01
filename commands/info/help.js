@@ -45,13 +45,13 @@ module.exports = {
         }
         if (cmd.name) embed.setTitle(`${client.allEmojis.y} Information About the Commands`);
         if (cmd.name) embed.addField("**<a:YellowArrow:904258979432132640> Command name**", `\`\`\`${cmd.name}\`\`\``);
-        if (cmd.description) embed.addField("**<a:YellowArrow:904258979432132640> Description**", `\`\`\`${cmd.description}\`\`\``);
+        if (cmd.description) embed.addField("**<a:AT_YellowArrow:948241660368810064> Description**", `\`\`\`${cmd.description}\`\`\``);
         if (cmd.aliases) try {
-          embed.addField("**<a:YellowArrow:904258979432132640> Aliases**", `\`\`\`${cmd.aliases.map((a) => `${a}`).join("`, `")}\`\`\``);
+          embed.addField("**<a:AT_YellowArrow:948241660368810064> Aliases**", `\`\`\`${cmd.aliases.map((a) => `${a}`).join("`, `")}\`\`\``);
         } catch {}
-        if (cmd.cooldown) embed.addField("**<a:YellowArrow:904258979432132640> Cooldown**", `\`\`\`${cmd.cooldown} Seconds\`\`\``);
+        if (cmd.cooldown) embed.addField("**<a:AT_YellowArrow:948241660368810064> Cooldown**", `\`\`\`${cmd.cooldown} Seconds\`\`\``);
         if (cmd.usage) {
-          embed.addField("**<a:YellowArrow:904258979432132640> Usage**", `\`\`\`${prefix}${cmd.usage}\`\`\``);
+          embed.addField("**<a:AT_YellowArrow:948241660368810064> Usage**", `\`\`\`${prefix}${cmd.usage}\`\`\``);
           // embed.setFooter("Syntax: <> = required, [] = optional");
         }
         return message.reply({
@@ -135,7 +135,7 @@ module.exports = {
             label: 'Ticket',
             description: 'Ticket Commands',
             value: 'Ticket',
-            emoji: '918835311621050428',
+            emoji: '🎟️',
           },
           {
             label: 'Utility',
@@ -147,7 +147,7 @@ module.exports = {
             label: 'Report',
             description: 'Commands to Report bugs, feedbacks and suggestions.',
             value: 'Report',
-            emoji: '903985507963383869',
+            emoji: '📣',
           },
         ];
 
@@ -196,21 +196,21 @@ module.exports = {
 > My Prefix For **${message.guild.name}** is \`${prefix}\`
 > You can also mention ${client.user} to get prefix info.`)
           .addFields([{
-            name: `<:M_Category:923142056342347786> **Categories:**`,
+            name: `🎛️ **Categories:**`,
             value: `>>> **<:M_y:905814084363112548> [Overview](${process.env.WEBSITE})
 🔰 [Information](${process.env.WEBSITE})
 <:M_music:919059393268572202> [Music](${process.env.WEBSITE})
 💪 [Setup](${process.env.WEBSITE})
 <:M_mod:903984765638697012> [Moderation](${process.env.WEBSITE})
 🕹️ [Fun](${process.env.WEBSITE})
-<:M_minigames:901781384232857630> [Mini Games](${process.env.WEBSITE})
+🎮 [Mini Games](${process.env.WEBSITE})
 🎉 [Giveaway](${process.env.WEBSITE})
-<:M_ticket:918835311621050428> [Ticket](${process.env.WEBSITE})
+🎟️ [Ticket](${process.env.WEBSITE})
 🔨 [Utility](${process.env.WEBSITE})
-<:M_report:903985507963383869> [Report](${process.env.WEBSITE})
+📣 [Report](${process.env.WEBSITE})
 <:M_level:903985530218356787> [Ranking](${process.env.WEBSITE})**`
           }])
-          .addField(`<:M_links:923143562034577448> **Links:**`, `>>> **[Support Server](${process.env.SUPPORT}) | [Invite Me](${process.env.INVITE}) | [Dashboard](${process.env.WEBSITE})**`)
+          .addField(`🔗 **Links:**`, `>>> **[Support Server](${process.env.SUPPORT}) | [Invite Me](${process.env.INVITE}) | [Dashboard](${process.env.WEBSITE})**`)
 
         var edited = false;
 
@@ -263,13 +263,13 @@ module.exports = {
                       name: `<:moderator:903984765638697012>┃Moderation`,
                       value: `${client.commands.filter((cmd) => cmd.category === "moderation").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
-                      name: `<:boost:903985530218356787>┃Ranking`,
+                      name: `🎚️┃Ranking`,
                       value: `${client.commands.filter((cmd) => cmd.category === "leveling").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
                       name: `🕹️┃Fun`,
                       value: `${client.commands.filter((cmd) => cmd.category === "fun").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
-                      name: `<:ItemController:901781384232857630>┃Mini Games`,
+                      name: `🎮┃Mini Games`,
                       value: `${client.commands.filter((cmd) => cmd.category === "games").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
                       name: `🎉┃Giveaway`,
@@ -281,7 +281,7 @@ module.exports = {
                       name: `🔨┃Utility`,
                       value: `${client.commands.filter((cmd) => cmd.category === "utility").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
-                      name: `<:reported:903985507963383869>┃Report`,
+                      name: `📣┃Report`,
                       value: `${client.commands.filter((cmd) => cmd.category === "report").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     })
                   ],
@@ -481,7 +481,7 @@ module.exports = {
         embeds.push(embed3)
 
         var embed4 = new MessageEmbed()
-          .addField(`<:boost:903985530218356787>┃__**RANKING**__`,
+          .addField(`🎚️┃__**RANKING**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "leveling").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed4)
 
@@ -491,7 +491,7 @@ module.exports = {
         embeds.push(embed5)
 
         var embed6 = new MessageEmbed()
-          .addField(`<:ItemController:901781384232857630>┃__**MINI GAMES**__`,
+          .addField(`🎮┃__**MINI GAMES**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "games").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed6)
 
@@ -501,7 +501,7 @@ module.exports = {
         embeds.push(embed7)
 
         var embed8 = new MessageEmbed()
-          .addField(`<:M_ticket:918835311621050428>┃__**TICKET**__`,
+          .addField(`🎟️┃__**TICKET**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "ticket").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed8)
 
