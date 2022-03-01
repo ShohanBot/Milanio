@@ -46,7 +46,7 @@ module.exports = {
                         name: `🎉┃Giveaway`,
                         value: `${client.slashCommands.filter((cmd) => cmd.category === "giveaway").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
-                        name: `<:M_ticket:918835311621050428>┃Ticket`,
+                        name: `🎟️┃Ticket`,
                         value: `${client.slashCommands.filter((cmd) => cmd.category === "ticket").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
                     }, {
                         name: `🔨┃Utility`,
