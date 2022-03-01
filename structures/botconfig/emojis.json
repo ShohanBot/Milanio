@@ -1,10 +1,10 @@
 {
-  "y": "<:y_:905814084363112548>",
-  "m": "<:m_:901828420097433701>",
-  "x": "<:x_:905814083561996348>",
+  "y": "<a:AT_check_mark:939427654396948490>",
+  "m": "<:Yuito:948249635741392937>",
+  "x": "<a:AT_Cross:939427842586976257>",
   "music": {
     "searching": "🔍",
-    "play": "<:y_:905814084363112548>",
+    "play": "<a:AT_check_mark:939427654396948490>",
     "playImg": "https://images-ext-1.discordapp.net/external/DkPCBVBHBDJC8xHHCF2G7-rJXnTwj_qs78udThL8Cy0/%3Fv%3D1/https/cdn.discordapp.com/emojis/859459305152708630.gif",
     "pause": "⏸️",
     "resume": "▶️",
@@ -15,7 +15,7 @@
     "loop": "🔂",
     "autoplay": "🔁",
     "shuffle": "🔀",
-    "addrelatedsong": "<:y_:905814084363112548>",
+    "addrelatedsong": "<a:AT_check_mark:939427654396948490>",
     "less10Sec": "⏪",
     "forward10Sec": "⏩",
     "negative10vol": "🔉",
@@ -37,7 +37,7 @@
     "plus10vol": "🔊"
   },
   "giveaway": {
-    "react": "<a:M_giveaways:901776001460236308>",
-    "drop": "<a:M_giftbot:915259307648495637>"
+    "react": "<a:AT_giveaway:945366549345222690>",
+    "drop": "<a:AT_giveaway:945366549345222690>"
   }
 }
